@@ -8,6 +8,7 @@ public class Stack {
     public Stack()
     {
         this.size=0;
+        this.list=new ArrayList<>(size);
 
     }
     public void push(int data)
@@ -55,6 +56,9 @@ public class Stack {
         s.push(5);
         s.push(6);
         s.display();
+        System.out.println(s.pop());
+        System.out.println(s.peek());
+        System.out.println(s.isEmpty());
     }
 
 }
