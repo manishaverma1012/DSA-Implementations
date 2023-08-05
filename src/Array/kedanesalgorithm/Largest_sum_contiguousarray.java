@@ -1,4 +1,4 @@
-package kedanesalgorithm;
+package Array.kedanesalgorithm;
 
 public class Largest_sum_contiguousarray {
     public static int Kedane(int arr[])

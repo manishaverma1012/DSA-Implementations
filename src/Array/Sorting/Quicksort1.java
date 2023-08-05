@@ -1,4 +1,4 @@
-package Sorting;
+package Array.Sorting;
 
 public class Quicksort1 {
     public void quicksort(int arr[],int start,int end)
