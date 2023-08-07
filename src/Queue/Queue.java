@@ -1,5 +1,8 @@
 package Queue;
 
+import java.io.IOException;
+import java.sql.SQLOutput;
+
 class QNode{
     int key;
     QNode next;
@@ -11,11 +14,13 @@ class QNode{
 }
 
 public class Queue {
+    int size;
     QNode front, rear;
     public Queue()
     {
         this.front=null;
         this.rear=null;
+        this.size=0;
     }
     void enqueue(int key)
     {
@@ -27,6 +32,7 @@ public class Queue {
         }
         this.rear.next=newnode;
         this.rear=newnode;
+        size++;
     }
     void dequeue()
     {
@@ -40,6 +46,7 @@ public class Queue {
         {
             this.rear=null;
         }
+        size--;
 
 
     }
@@ -51,8 +58,36 @@ public class Queue {
         }
         return false;
     }
+    public void display()
+    {
+        if(this.front==null || this.rear ==null)
+        {
+            System.out.println("queue is empty");
+            return;
+        }
+        QNode temp=this.front;
+        while(temp!=this.rear.next)
+        {
+            System.out.println(temp.key);
+            temp=temp.next;
+
+        }
+
+    }
+    public void Size()
+    {
+
+        System.out.println(size);
+    }
 
     public static void main(String[] args) {
+        Queue queue=new Queue();
+        queue.enqueue(2);
+        queue.enqueue(5);
+        queue.dequeue();
+        queue.display();
+//        System.out.println(queue.isEmpty());
+//        queue.Size();
 
     }
 
