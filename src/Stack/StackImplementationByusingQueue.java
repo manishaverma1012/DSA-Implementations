@@ -23,7 +23,7 @@ public class StackImplementationByusingQueue {
         }
         static int pop()
         {
-            if(!q2.isEmpty())
+            if(q2.isEmpty())
             {
                 return 0;
             }
