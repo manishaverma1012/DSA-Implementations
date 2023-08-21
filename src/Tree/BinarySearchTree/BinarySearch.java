@@ -96,8 +96,6 @@ public class BinarySearch {
 
 
 
-
-
             }
             return root;
         }
@@ -123,11 +121,5 @@ public class BinarySearch {
         System.out.println();
         delete(root,12);
         inorder(root);
-
-
-
-
-
-
     }
 }
