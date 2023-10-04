@@ -19,6 +19,10 @@ public class Stack {
     }
     public int pop()
     {
+        if(isEmpty())
+        {
+            return -1;
+        }
         int val=peek();
         list.remove(size-1);
         size--;
