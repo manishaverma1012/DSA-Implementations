@@ -3,8 +3,9 @@ package Tree.BinaryTree;
 import javax.print.attribute.IntegerSyntax;
 import java.util.ArrayList;
 import java.util.List;
-
+//right view vice versa
 public class LeftView {
+    static int maxLevel = 0;
 
     public static List<Integer> printLeftView(BinaryTree.Node root) {
         ArrayList<Integer> arrayList = new ArrayList<>();
@@ -20,8 +21,6 @@ public class LeftView {
        if(root == null) {
            return;
        }
-
-       int maxLevel =0;
 
        if(level > maxLevel) {
            maxLevel = level;
