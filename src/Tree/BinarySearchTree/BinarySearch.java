@@ -1,10 +1,4 @@
 package Tree.BinarySearchTree;
-import java.util.*;
-class BST
-{
-
-}
-
 public class BinarySearch {
     static class Node {
         int data;
