@@ -2,9 +2,10 @@ package Array.Sorting;
 
 import java.util.Arrays;
 
+//Algorithm	Best Case	Average Case	Worst Case
+//Merge Sort	O(n log n)	O(n log n)	O(n log n)
 public class mergesort {
-    public static void mergesort(int arr[],int start, int end)
-    {
+    public static void mergesort(int arr[],int start, int end) {
         if((end-start)==1)
         {
             return;
@@ -13,10 +14,8 @@ public class mergesort {
         mergesort(arr,start,mid);
         mergesort(arr,mid,end);
         merge(arr,start,mid,end);
-
     }
-    public static void merge(int arr[], int start,int mid, int end)
-    {
+    public static void merge(int arr[], int start,int mid, int end) {
         int a[]=new int[end-start];
         int i=start;int j=mid;int k=0;
         while(i<mid && j<end)
@@ -47,6 +46,7 @@ public class mergesort {
             k++;
 
         }
+        // copying array a into arr (original array)
         for(int n=0;n<a.length;n++)
         {
             arr[start+n]=a[n];

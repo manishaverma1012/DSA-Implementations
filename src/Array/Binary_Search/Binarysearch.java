@@ -1,5 +1,8 @@
 package Array.Binary_Search;
 
+//Algorithm	Best Case	Average Case	Worst Case
+//Binary Search	O(1)	O(log n)	O(log n)
+
 public class Binarysearch {
     public static void main(String[] args) {
         int arr[]={3,5,7,9,10,14,34,65,87,90};

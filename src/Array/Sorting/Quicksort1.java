@@ -1,7 +1,7 @@
 package Array.Sorting;
 
 public class Quicksort1 {
-    public void quicksort(int arr[],int start,int end)
+    public static void quicksort(int arr[],int start,int end)
     {
         if(start<end)
         {
@@ -11,7 +11,7 @@ public class Quicksort1 {
 
         }
     }
-    public int findpivot(int arr[],int low, int high)
+    public static int findpivot(int arr[],int low, int high)
     {
         int pivot=arr[high];
         int start=low-1;
@@ -30,7 +30,7 @@ public class Quicksort1 {
 
 
     }
-    public void swap(int arr[],int i, int j) {
+    public static void swap(int arr[],int i, int j) {
         int temp=arr[i];
         arr[i]=arr[j];
         arr[j]=temp;

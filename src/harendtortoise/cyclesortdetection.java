@@ -3,6 +3,10 @@ package harendtortoise;
 import java.util.Arrays;
 //floyd's detection
 //it is based on cycle sort which is in range[0,n] or [1,n] that thing will be given;
+//Complexity
+//Time: O(n) — each pointer traverses at most a constant multiple of n steps.
+//
+//Space: O(1) — only two pointers, no extra data structures.
 public class cyclesortdetection {
     public static void cyclesort(int arr[])
     {
@@ -10,6 +14,7 @@ public class cyclesortdetection {
         int i=0;
         while(i<n)
         {
+            // important condition to find out the exact unsorted position
             if(arr[i]<n && arr[i]!=arr[arr[i]-1])
             {
                 swap(arr,i,arr[i]-1);

@@ -1,20 +1,20 @@
 package Array.Sorting;
 
 import java.util.Arrays;
+//Algorithm	Best Case	Average Case	Worst Case
+/// Quick Sort	O(n log n)	O(n log n)	O(n²)
 
 public class quicksort {
     public static void Quicksort(int arr[],int start, int end)
     {
-        if(start>=end)
-        {
+        if(start>=end) {
             return;
         }
         int i=start;
         int j=end;
         int mid=i+(j-i)/2;
         int pivot=arr[mid];
-        while(i<=j)
-        {
+        while(i<=j) {
             while(arr[i]<pivot)
             {
                 i++;
@@ -42,7 +42,7 @@ public class quicksort {
 
     public static void main(String[] args) {
         int arr[]={4,7,3,6,19,5,2,1};
-        Quicksort(arr,0,arr.length-1);
+        Quicksort1.quicksort(arr,0,arr.length-1);
         System.out.println(Arrays.toString(arr));
     }
 }
