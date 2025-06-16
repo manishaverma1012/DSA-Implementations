@@ -2,6 +2,10 @@ package Collections.HashTable;
 
 import java.util.*;
 
+//Hashtable datastructure is an array of buckets which stores the key/value pairs in them.
+// It makes use of hashCode() method to determine which bucket the key/value pair should map.
+//similar with hashmap but it is synchronized.
+
 public class hashTable1 {
     public static void main(String[] args) {
         Hashtable<Integer, String> hm = new Hashtable<>();
@@ -20,6 +24,7 @@ public class hashTable1 {
         boolean flag1 = hm.contains("Manisha");
         System.out.println(flag1);
 
+        //HashMap doesn't provide any Enumeration, while Hashtable provides not fail-fast Enumeration.
         //Here, we specify the if and else statement as arguments of the method
         System.out.println(hm.getOrDefault(101, "Not Found"));
         System.out.println(hm.getOrDefault(105, "Not Found"));

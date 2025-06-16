@@ -5,17 +5,13 @@ import java.util.*;
 public class Stack {
     private ArrayList<Integer> list;
     private int size;
-    public Stack()
-    {
+    public Stack() {
         this.size=0;
         this.list=new ArrayList<>(size);
-
     }
-    public void push(int data)
-    {
+    public void push(int data) {
         list.add(data);
         size++;
-
     }
     public int pop()
     {

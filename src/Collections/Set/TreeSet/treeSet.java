@@ -15,12 +15,11 @@ public class treeSet {
         al.add("Ajay");
         //Traversing elements
         Iterator<String> itr=al.iterator();
-        while(itr.hasNext()){
+        while(itr.hasNext()) {
             System.out.println(itr.next());
         }
         Iterator i=al.descendingIterator();
-        while(i.hasNext())
-        {
+        while(i.hasNext()) {
             System.out.println(i.next());
         }
 

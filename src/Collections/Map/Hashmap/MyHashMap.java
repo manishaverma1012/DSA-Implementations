@@ -5,16 +5,14 @@ import java.util.*;
 public class MyHashMap {
     private  static final int SIZE=1000;
     private List<int []>[] map;
-    public MyHashMap()
-    {
+
+    public MyHashMap() {
         map=new ArrayList[SIZE];
-        for(int i=0;i<SIZE;i++)
-        {
+        for(int i=0;i<SIZE;i++) {
             map[i]=new ArrayList<>();
         }
-
-
     }
+
     public void put(int key, int value)
     {
         int index=key%SIZE;
