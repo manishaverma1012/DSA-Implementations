@@ -5,6 +5,7 @@ public class CLL {
         int data;
         Node next;
     }
+
     static Node insertToEmpty(Node last, int data) {
         if (last != null)
             return last;
@@ -23,6 +24,7 @@ public class CLL {
 
         return last;
     }
+
     static Node insertFront(Node last, int data) {
         if (last == null)
             return insertToEmpty(last,data);
@@ -40,6 +42,7 @@ public class CLL {
 
         return last;
     }
+
     static Node insertEnd(Node last, int data) {
         if (last == null)
             return insertToEmpty(last, data);
@@ -61,6 +64,7 @@ public class CLL {
 
         return last;
     }
+
     static Node deleteNode(Node last, int key) {
         // if linked list is empty
         if (last == null)
@@ -98,6 +102,7 @@ public class CLL {
         }
         return last;
     }
+
     static void Display(Node last) {
         Node temp;
 
@@ -114,13 +119,11 @@ public class CLL {
 
         }
         while (temp != last.next);
-
     }
 
     public static void main(String[] args) {
         Node last=null;
         last=insertToEmpty(last,3);
-
     }
 
 

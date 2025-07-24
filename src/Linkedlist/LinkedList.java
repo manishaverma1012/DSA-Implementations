@@ -4,22 +4,21 @@ public class LinkedList {
     private Node head;
     private Node tail;
     private int size;
-    LinkedList()
-    {
-        this.size=0;
 
+    LinkedList() {
+        this.size=0;
     }
-    private class Node
-    {
+
+    private class Node {
+
         private int data;
         private Node next;
-        public Node(int data)
-        {
-            this.data=data;
 
+        public Node(int data) {
+            this.data=data;
         }
-        public Node(int data, Node next)
-        {
+
+        public Node(int data, Node next) {
             this.data=data;
             this.next=next;
         }

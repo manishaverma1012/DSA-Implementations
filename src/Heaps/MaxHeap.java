@@ -5,9 +5,7 @@ public class MaxHeap {
     public static void main(String[] args) {
 
 
-        PriorityQueue<Integer> pQueue
-                = new PriorityQueue<Integer>(
-                Collections.reverseOrder());
+        PriorityQueue<Integer> pQueue = new PriorityQueue<Integer>(Collections.reverseOrder());
 
         // Adding items to our priority queue
         // using add() method
